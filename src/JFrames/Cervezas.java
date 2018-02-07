@@ -51,7 +51,7 @@ public class Cervezas extends javax.swing.JPanel {
 
         display.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         display.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        add(display, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 410, 650, 20));
+        add(display, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 650, 20));
 
         jTableCervezas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,7 +73,7 @@ public class Cervezas extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTableCervezas);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, 217));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, 217));
 
         jPanel1.setLayout(new java.awt.GridLayout(3, 3, 15, 25));
 
@@ -120,7 +120,7 @@ public class Cervezas extends javax.swing.JPanel {
         });
         jPanel1.add(btnBorrar);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 540, 140));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 540, 140));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
@@ -168,6 +168,8 @@ public class Cervezas extends javax.swing.JPanel {
             CRUDCervezas borrar = new CRUDCervezas();
             borrar.Borrar();
             borrar.MostrarRegistroCervezas();
+            CRUDVentas actualizarComboBox = new CRUDVentas();
+            actualizarComboBox.GenerarComboBox();
         }
     }//GEN-LAST:event_jTableCervezasKeyReleased
 

@@ -85,8 +85,8 @@ public class Principal extends javax.swing.JFrame {
 
         TabPane.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         TabPane.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
-        TabPane.setMinimumSize(new java.awt.Dimension(666, 551));
-        TabPane.setPreferredSize(new java.awt.Dimension(666, 600));
+        TabPane.setMinimumSize(new java.awt.Dimension(666, 500));
+        TabPane.setPreferredSize(new java.awt.Dimension(666, 535));
         TabPanel.add(TabPane);
 
         getContentPane().add(TabPanel, java.awt.BorderLayout.CENTER);
@@ -95,7 +95,6 @@ public class Principal extends javax.swing.JFrame {
         BannerPanel.setFocusable(false);
         BannerPanel.setMinimumSize(new java.awt.Dimension(688, 130));
         BannerPanel.setOpaque(true);
-        BannerPanel.setPreferredSize(new java.awt.Dimension(688, 130));
         BannerPanel.setLayout(new java.awt.FlowLayout());
 
         ImagenBanner.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -154,7 +153,7 @@ public class Principal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setBounds(0, 0, 689, 843);
+        setBounds(0, 0, 686, 737);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed

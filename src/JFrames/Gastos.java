@@ -81,10 +81,10 @@ public class Gastos extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(TablaGastos);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 228, 650, 240));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 228, 650, 190));
 
         displayGastos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        add(displayGastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 660, 20));
+        add(displayGastos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 660, 20));
 
         btnExportar.setText("Exportar tabla");
         btnExportar.addActionListener(new java.awt.event.ActionListener() {
@@ -92,7 +92,7 @@ public class Gastos extends javax.swing.JPanel {
                 btnExportarActionPerformed(evt);
             }
         });
-        add(btnExportar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 510, -1, -1));
+        add(btnExportar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
 
         jPanel1.setLayout(new java.awt.GridLayout(4, 3, 15, 25));
 
@@ -165,6 +165,8 @@ public class Gastos extends javax.swing.JPanel {
             CRUDGastos borrar = new CRUDGastos();
             borrar.Borrar();
             borrar.MostrarRegistroGastos();
+            CRUDBalance mostrar = new CRUDBalance();
+            mostrar.ObtenerBalance();
         }
         
     }//GEN-LAST:event_TablaGastosKeyReleased

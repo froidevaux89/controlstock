@@ -73,7 +73,7 @@ public class Ventas extends javax.swing.JPanel {
                 btnExportarActionPerformed(evt);
             }
         });
-        add(btnExportar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 510, -1, -1));
+        add(btnExportar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 460, -1, -1));
 
         jTableRegistroVentas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -90,11 +90,11 @@ public class Ventas extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTableRegistroVentas);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 265, 630, 210));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 265, 630, 160));
 
         displayVenta.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         displayVenta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        add(displayVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 630, 17));
+        add(displayVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 630, 17));
 
         jPanel1.setLayout(new java.awt.GridLayout(5, 3, 15, 25));
 

@@ -46,9 +46,9 @@ public class Clientes extends javax.swing.JPanel {
         nombre = new javax.swing.JLabel();
         txtNombres = new javax.swing.JTextField();
         apellido = new javax.swing.JLabel();
-        txtContacto = new javax.swing.JTextField();
-        datosContacto = new javax.swing.JLabel();
         txtApellidos = new javax.swing.JTextField();
+        datosContacto = new javax.swing.JLabel();
+        txtContacto = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         btnAgregar = new javax.swing.JButton();
         btnActualizar = new javax.swing.JButton();
@@ -58,7 +58,7 @@ public class Clientes extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(666, 551));
         setMinimumSize(new java.awt.Dimension(666, 551));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(displayClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 480, 228, 20));
+        add(displayClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 228, 20));
 
         jTableClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -80,7 +80,7 @@ public class Clientes extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTableClientes);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(87, 234, 520, 230));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, 520, 170));
 
         jPanel1.setLayout(new java.awt.GridLayout(3, 2, 15, 25));
 
@@ -99,15 +99,6 @@ public class Clientes extends javax.swing.JPanel {
         apellido.setText("Apellidos:");
         jPanel1.add(apellido);
 
-        txtContacto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPanel1.add(txtContacto);
-
-        datosContacto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        datosContacto.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        datosContacto.setLabelFor(txtContacto);
-        datosContacto.setText("Datos de contacto:");
-        jPanel1.add(datosContacto);
-
         txtApellidos.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtApellidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +107,16 @@ public class Clientes extends javax.swing.JPanel {
         });
         jPanel1.add(txtApellidos);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 420, 140));
+        datosContacto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        datosContacto.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        datosContacto.setLabelFor(txtContacto);
+        datosContacto.setText("Datos de contacto:");
+        jPanel1.add(datosContacto);
+
+        txtContacto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPanel1.add(txtContacto);
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 420, 140));
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 3, 15, 25));
 
@@ -145,7 +145,7 @@ public class Clientes extends javax.swing.JPanel {
         });
         jPanel2.add(btnBorrar);
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 340, 30));
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 340, 30));
 
         jButton1.setText("Exportar tabla");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -153,7 +153,7 @@ public class Clientes extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 510, 140, 30));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, 140, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
@@ -176,6 +176,8 @@ public class Clientes extends javax.swing.JPanel {
             CRUDClientes borrar = new CRUDClientes();
             borrar.Borrar();
             borrar.MostrarRegistroClientes();
+            CRUDVentas actualizarComboBox = new CRUDVentas();
+            actualizarComboBox.GenerarComboBox();
         }
     }//GEN-LAST:event_jTableClientesKeyReleased
 
