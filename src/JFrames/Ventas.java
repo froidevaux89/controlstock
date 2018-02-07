@@ -119,6 +119,7 @@ public class Ventas extends javax.swing.JPanel {
         cantidad.setText("Cantidad:");
         jPanel1.add(cantidad);
 
+        txtCantidad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCantidad.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 txtCantidadFocusGained(evt);
@@ -151,6 +152,8 @@ public class Ventas extends javax.swing.JPanel {
         precio.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         precio.setText("Precio unitario:");
         jPanel1.add(precio);
+
+        txtPrecio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtPrecio);
         jPanel1.add(jLabel6);
 

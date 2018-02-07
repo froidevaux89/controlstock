@@ -90,6 +90,8 @@ public class Cervezas extends javax.swing.JPanel {
         unidades.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         unidades.setText("Unidades:");
         jPanel1.add(unidades);
+
+        txtCantidad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtCantidad);
         jPanel1.add(jLabel2);
 

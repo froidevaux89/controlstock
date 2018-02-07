@@ -89,6 +89,8 @@ public class Clientes extends javax.swing.JPanel {
         nombre.setLabelFor(txtNombres);
         nombre.setText("Nombres:");
         jPanel1.add(nombre);
+
+        txtNombres.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtNombres);
 
         apellido.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -96,6 +98,8 @@ public class Clientes extends javax.swing.JPanel {
         apellido.setLabelFor(txtApellidos);
         apellido.setText("Apellidos:");
         jPanel1.add(apellido);
+
+        txtContacto.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtContacto);
 
         datosContacto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -104,6 +108,7 @@ public class Clientes extends javax.swing.JPanel {
         datosContacto.setText("Datos de contacto:");
         jPanel1.add(datosContacto);
 
+        txtApellidos.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtApellidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtApellidosActionPerformed(evt);

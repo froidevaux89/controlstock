@@ -100,6 +100,8 @@ public class Gastos extends javax.swing.JPanel {
         descripcion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         descripcion.setText("Descripción :");
         jPanel1.add(descripcion);
+
+        txtDescripcion.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtDescripcion);
         jPanel1.add(jLabel3);
 
@@ -107,6 +109,8 @@ public class Gastos extends javax.swing.JPanel {
         importe.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         importe.setText("Importe:");
         jPanel1.add(importe);
+
+        txtImporte.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtImporte);
         jPanel1.add(jLabel4);
 
@@ -114,6 +118,8 @@ public class Gastos extends javax.swing.JPanel {
         fecha.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         fecha.setText("Fecha:");
         jPanel1.add(fecha);
+
+        txtFecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel1.add(txtFecha);
         jPanel1.add(jLabel6);
 
